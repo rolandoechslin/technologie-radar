@@ -1,0 +1,823 @@
+<html>
+
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Developer Skills Radar</title>
+<link rel="shortcut icon" href="https://www.garaio.com/favicon.ico">
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="radar.js"></script>
+
+<link rel="stylesheet" href="radar.css">
+</head>
+
+<body>
+
+<svg id="radar"></svg>
+
+<script>
+radar_visualization({
+  svg_id: "radar",
+  width: 1450,
+  height: 1000,
+  colors: {
+    background: "#fff",
+    grid: "#bbb",
+    inactive: "#ddd"
+  },
+  title: "Developer Skills Radar - September 2019",
+  quadrants: [
+    { name: "Technologien & Methoden" },
+    { name: "Frameworks & Sprachen" },
+    { name: "Plattformen & Tools" },
+    { name: "Produkte & Services" }
+  ],
+  rings: [
+    { name: "Profi Wissen", color: "#93c47d" },
+    { name: "Gut", color: "#93d2c2" },
+    { name: "Mässing", color: "#fbdb84" },
+    { name: "Kein Wissen", color: "#efafa9" }
+  ],
+  print_layout: true,
+  // zoomed_quadrant: 0,
+  //ENTRIES
+  entries: [
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "C-Sharp",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/dotnet/csharp/",
+        "moved":  0,
+        "Bewertung":  4.5
+    },
+    {
+        "quadrant":  1,
+        "ring":  3,
+        "label":  "SQL",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  1.5
+    },
+    {
+        "quadrant":  2,
+        "ring":  1,
+        "label":  "Visual Studio",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  5.5
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "WCF",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  4
+    },
+    {
+        "quadrant":  2,
+        "ring":  1,
+        "label":  "Fiddler",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  6
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "Functional Programming",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  5
+    },
+    {
+        "quadrant":  2,
+        "ring":  1,
+        "label":  "Git",
+        "active":  true,
+        "link":  "https://git-scm.com/",
+        "moved":  0,
+        "Bewertung":  5.7
+    },
+    {
+        "quadrant":  0,
+        "ring":  2,
+        "label":  "OOP",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  4
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "Regex",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  5
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "REST",
+        "active":  true,
+        "link":  "https://de.wikipedia.org/wiki/Representational_State_Transfer",
+        "moved":  0,
+        "Bewertung":  5.7
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "SOAP",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  5
+    },
+    {
+        "quadrant":  0,
+        "ring":  1,
+        "label":  "TDD",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  6
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "XML",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  6
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "Xpath",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  4.7
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "XSD",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  5.7
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "XSLT",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  3.7
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "CSS",
+        "active":  true,
+        "link":  "https://developer.mozilla.org/en-US/docs/Web/css",
+        "moved":  0,
+        "Bewertung":  3.2
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "Html",
+        "active":  true,
+        "link":  "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        "moved":  0,
+        "Bewertung":  7.4
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "JavaScript (ES2015+)",
+        "active":  true,
+        "link":  "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "moved":  0,
+        "Bewertung":  5.4
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "Jest",
+        "active":  true,
+        "link":  "https://blog.velingeorgiev.com/unit-test-your-sharepoint-framework-solution-with-jest",
+        "moved":  0,
+        "Bewertung":  6.2
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "jQuery",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  6.6
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "React",
+        "active":  true,
+        "link":  "https://reactjs.org/",
+        "moved":  0,
+        "Bewertung":  5.6
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "RxJS",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  5
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "SASS",
+        "active":  true,
+        "link":  "https://sass-lang.com/",
+        "moved":  0,
+        "Bewertung":  6.2
+    },
+    {
+        "quadrant":  1,
+        "ring":  0,
+        "label":  "TypeScript",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/sharepoint/dev/spfx/tools-and-libraries#typescript",
+        "moved":  0,
+        "Bewertung":  8.8
+    },
+    {
+        "quadrant":  2,
+        "ring":  1,
+        "label":  "VSCode",
+        "active":  true,
+        "link":  "https://code.visualstudio.com/",
+        "moved":  0,
+        "Bewertung":  5.4
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "Gulp",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/sharepoint/dev/spfx/toolchain/sharepoint-framework-toolchain#build-tasks",
+        "moved":  0,
+        "Bewertung":  6.7
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "Node",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/sharepoint/dev/spfx/tools-and-libraries#nodejs",
+        "moved":  0,
+        "Bewertung":  7.3
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "Npm",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/sharepoint/dev/spfx/tools-and-libraries#node-package-manager-npm",
+        "moved":  0,
+        "Bewertung":  7
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "Webpack",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/sharepoint/dev/spfx/tools-and-libraries#webpack",
+        "moved":  0,
+        "Bewertung":  7
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "Yeoman",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/sharepoint/dev/spfx/toolchain/scaffolding-projects-using-yeoman-sharepoint-generator",
+        "moved":  0,
+        "Bewertung":  6
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "Adaptive Cards",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  4
+    },
+    {
+        "quadrant":  3,
+        "ring":  2,
+        "label":  "Flow",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/flow/",
+        "moved":  0,
+        "Bewertung":  3
+    },
+    {
+        "quadrant":  3,
+        "ring":  2,
+        "label":  "Logic Apps",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  3.3
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "Microsoft Graph (REST-API)",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/sharepoint/dev/spfx/use-msgraph",
+        "moved":  0,
+        "Bewertung":  4.3
+    },
+    {
+        "quadrant":  2,
+        "ring":  2,
+        "label":  "Office 365 CLI",
+        "active":  true,
+        "link":  "https://pnp.github.io/office365-cli/",
+        "moved":  0,
+        "Bewertung":  4
+    },
+    {
+        "quadrant":  3,
+        "ring":  1,
+        "label":  "Power Apps",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  6.7
+    },
+    {
+        "quadrant":  3,
+        "ring":  0,
+        "label":  "Power BI",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  8.3
+    },
+    {
+        "quadrant":  2,
+        "ring":  1,
+        "label":  "SharePoint Online Management",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell?view=sharepoint-ps",
+        "moved":  0,
+        "Bewertung":  7
+    },
+    {
+        "quadrant":  3,
+        "ring":  2,
+        "label":  "Teams",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/flow/",
+        "moved":  0,
+        "Bewertung":  2.7
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "Powershell",
+        "active":  true,
+        "link":  "https://www.sharepointeurope.com/powershell-cheat-sheet/",
+        "moved":  0,
+        "Bewertung":  6
+    },
+    {
+        "quadrant":  0,
+        "ring":  1,
+        "label":  "Add-In Framework",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  5.2
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "CAML",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  5
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "CSOM",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  5
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "Enterprise Search",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  6.6
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "Lists/Libraries/Views",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  5.4
+    },
+    {
+        "quadrant":  1,
+        "ring":  3,
+        "label":  "Managed Metadata Service",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  1.8
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "Modern Feature Framework",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/sharepoint/dev/spfx/toolchain/provision-sharepoint-assets",
+        "moved":  0,
+        "Bewertung":  4.6
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "Modern WebParts",
+        "active":  true,
+        "link":  "https://github.com/SharePoint/sp-dev-training-spfx-web-parts",
+        "moved":  0,
+        "Bewertung":  6
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "Office UI Fabric",
+        "active":  true,
+        "link":  "https://developer.microsoft.com/en-us/fabric#/",
+        "moved":  0,
+        "Bewertung":  4.2
+    },
+    {
+        "quadrant":  2,
+        "ring":  1,
+        "label":  "Package Deployment",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/basics/notes-on-solution-packaging",
+        "moved":  0,
+        "Bewertung":  6
+    },
+    {
+        "quadrant":  1,
+        "ring":  0,
+        "label":  "PnP-JS",
+        "active":  true,
+        "link":  "https://pnp.github.io/pnpjs/",
+        "moved":  0,
+        "Bewertung":  8.6
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "PnP-PowerShell",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps",
+        "moved":  0,
+        "Bewertung":  7.4
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "Schema (Content Types, Columns)",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  3.8
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "SharePoint Permissions",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  6.2
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "Sharepoint REST API",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/sharepoint/dev/spfx/connect-to-sharepoint",
+        "moved":  0,
+        "Bewertung":  6
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "SPFx-Property-Controls",
+        "active":  true,
+        "link":  "https://sharepoint.github.io/sp-dev-fx-property-controls/",
+        "moved":  0,
+        "Bewertung":  5.4
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "SPFx-React-Controls",
+        "active":  true,
+        "link":  "https://sharepoint.github.io/sp-dev-fx-controls-react/",
+        "moved":  0,
+        "Bewertung":  4.2
+    },
+    {
+        "quadrant":  0,
+        "ring":  2,
+        "label":  "Technologie Model",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/sharepoint/dev/spfx/sharepoint-framework-overview",
+        "moved":  0,
+        "Bewertung":  4.4
+    },
+    {
+        "quadrant":  3,
+        "ring":  1,
+        "label":  "User Profile Service",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  7.2
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "ASP.NET",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  4
+    },
+    {
+        "quadrant":  0,
+        "ring":  1,
+        "label":  "Full-Trust Solutions",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  6.5
+    },
+    {
+        "quadrant":  0,
+        "ring":  1,
+        "label":  "Publishing Infrastructure",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  5.5
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "SharePoint Hive",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  5
+    },
+    {
+        "quadrant":  1,
+        "ring":  3,
+        "label":  "SharePoint Server Side Object Model",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  2.5
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "AngularJS",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  3
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "Framework Isolation",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  5.5
+    },
+    {
+        "quadrant":  3,
+        "ring":  1,
+        "label":  "GW Branding",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  6
+    },
+    {
+        "quadrant":  3,
+        "ring":  1,
+        "label":  "GW Bundling",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  7.5
+    },
+    {
+        "quadrant":  3,
+        "ring":  2,
+        "label":  "GW Collaboration",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  3.5
+    },
+    {
+        "quadrant":  3,
+        "ring":  3,
+        "label":  "GW Diagnosticts",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  2.5
+    },
+    {
+        "quadrant":  3,
+        "ring":  3,
+        "label":  "GW Provisioning",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  2
+    },
+    {
+        "quadrant":  3,
+        "ring":  1,
+        "label":  "GW Publishing",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  5.5
+    },
+    {
+        "quadrant":  3,
+        "ring":  0,
+        "label":  "GW Task Framework",
+        "active":  true,
+        "link":  null,
+        "moved":  0,
+        "Bewertung":  10
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "Application Customizer",
+        "active":  true,
+        "link":  "https://github.com/SharePoint/sp-dev-training-spfx-extensions",
+        "moved":  0,
+        "Bewertung":  5
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "Field Customizer",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/sharepoint/dev/spfx/extensions/get-started/building-simple-field-customizer",
+        "moved":  0,
+        "Bewertung":  4.3
+    },
+    {
+        "quadrant":  1,
+        "ring":  1,
+        "label":  "JSON View / Column Formating",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/sharepoint/dev/declarative-customization/column-formatting",
+        "moved":  0,
+        "Bewertung":  6.3
+    },
+    {
+        "quadrant":  1,
+        "ring":  0,
+        "label":  "Library Component",
+        "active":  true,
+        "link":  "https://github.com/SharePoint/sp-dev-fx-library-components",
+        "moved":  0,
+        "Bewertung":  9.3
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "ListView CommandSet",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/sharepoint/dev/spfx/extensions/get-started/building-simple-cmdset-with-dialog-api",
+        "moved":  0,
+        "Bewertung":  3.3
+    },
+    {
+        "quadrant":  1,
+        "ring":  0,
+        "label":  "Site Design / Scripts",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/sharepoint/dev/declarative-customization/site-design-overview",
+        "moved":  0,
+        "Bewertung":  7.7
+    },
+    {
+        "quadrant":  1,
+        "ring":  2,
+        "label":  "Site Theme",
+        "active":  true,
+        "link":  "https://docs.microsoft.com/en-us/sharepoint/dev/declarative-customization/site-theming/sharepoint-site-theming-overview",
+        "moved":  0,
+        "Bewertung":  4.7
+    }
+]
+
+  //ENTRIES
+});
+</script>
+
+<table>
+<tr>
+<td>
+
+<h3>What is the Tech Radar?</h3>
+
+<p>
+The Zalando Tech Radar is a list of technologies, complemented by an assessment result, called <em>ring assignment</em>. We use four rings with the following semantics:
+</p>
+
+<ul>
+<li><strong>ADOPT</strong> &mdash; Technologies we have high confidence in to serve our purpose, also in large scale. Technologies with a usage culture in our Zalando production environment, low risk and recommended to be widely used.</li>
+<li><strong>TRIAL</strong> &mdash; Technologies that we have seen work with success in project work to solve a real problem; first serious usage experience that confirm benefits and can uncover limitations. TRIAL technologies are slightly more risky; some engineers in our organization walked this path and will share knowledge and experiences.</li>
+<li><strong>ASSESS</strong> &mdash; Technologies that are promising and have clear potential value-add for us; technologies worth to invest some research and prototyping efforts in to see if it has impact. ASSESS technologies have higher risks; they are often brand new and highly unproven in our organisation. You will find some engineers that have knowledge in the technology and promote it, you may even find teams that have started a prototyping effort.</li>
+<li><strong>HOLD</strong> &mdash; Technologies not recommended to be used for new projects. Technologies that we think are not (yet) worth to (further) invest in. HOLD technologies should not be used for new projects, but usually can be continued for existing projects.</li>
+</ul>
+
+</td><td>
+
+<h3>What is the purpose?</h3>
+
+<p>
+The Tech Radar is a tool to inspire and support engineering teams at Zalando to pick the best technologies for new projects; it provides a platform to share knowledge and experience in technologies, to reflect on technology decisions and continuously evolve our technology landscape. Based on the <a href="https://www.thoughtworks.com/radar">pioneering work of ThoughtWorks</a>, our Tech Radar sets out the changes in technologies that are interesting in software development &mdash; changes that we think our engineering teams should pay attention to and consider using in their projects.
+</p>
+
+<h3>How do we maintain it?</h3>
+
+<p>
+The Tech Radar is maintained by the <em>Zalando Technologists Guild</em> &mdash; an open group of  senior Zalando technologists committed to devote time to the Tech Radar purpose. The guild self organises to maintain the Tech Radar documents, including this public version. Assignment of technologies to rings is the outcome of ring change proposals, which are discussed and voted on in guild meetings. The Tech Radar depends on active participation and input from all engineering teams at Zalando.
+</p>
+
+<p>
+There is also an <a href="https://techradar.zalando.net/">internal version of the Tech Radar</a> that contains background information about each technology &mdash; when to use it, pros and cons, main risks, which teams at Zalando are using it, and for what purpose.
+</p>
+
+<p>
+<em>BTW, if you would like to create your own Tech Radar &mdash; we have <a href="https://github.com/zalando/tech-radar">open sourced the code</a> to generate this visualization.</em>
+</p>
+
+</td></tr>
+</table>
+
+</body>
+</html>
