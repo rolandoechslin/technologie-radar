@@ -1,6 +1,6 @@
 # Summary
 
-This Repo is based on [public Tech Radar](http://zalando.github.io/tech-radar/) and [pioneering work by ThoughtWorks](https://www.thoughtworks.com/radar).
+This Repo is based on [Zalando public Tech Radar](http://zalando.github.io/tech-radar/) and [pioneering work by ThoughtWorks](https://www.thoughtworks.com/radar).
 
 This repository contains the code to generate the visualization:
 [`radar.js`](/docs/radar.js) (based on [d3.js v4](https://d3js.org)).
