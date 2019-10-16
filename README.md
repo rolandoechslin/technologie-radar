@@ -6,6 +6,20 @@ This repository contains the code to generate the visualization:
 [`radar.js`](/docs/radar.js) (based on [d3.js v4](https://d3js.org)).
 Feel free to use and adapt it for your own purposes.
 
+## Deployment
+
+1. Install  dependencies
+
+```ps
+npm i
+```
+
+2. Start local dev server
+
+```ps
+npm start
+```
+
 ## License
 
 ```txt
