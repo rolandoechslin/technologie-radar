@@ -17,7 +17,7 @@ npm i
 2. Start local dev server
 
 ```ps
-npm start
+npm run start
 ```
 
 ## License
