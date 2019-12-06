@@ -397,7 +397,7 @@ function radar_visualization(config) {
     if (d.active && d.hasOwnProperty("link")) {
       blip = blip.append("a")
         .attr("xlink:href", d.link)
-        .attr("xlink:target", "_blank");
+        .attr("xlink:target", "_new");
     }
 
     // blip shape
