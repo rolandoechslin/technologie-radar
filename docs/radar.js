@@ -309,9 +309,9 @@ function radar_visualization(config) {
               .attr("transform", function(d, i) { return legend_transform(quadrant, ring, i); })
               .attr("class", "legend" + quadrant + ring)
               .attr("id", function(d, i) { return "legendItem" + d.id; })
-              .text(function(d, i) { return d.id + ". " + d.label; })
+              .text(function(d, i) { return d.id + ". " + d.label.slice(0, 20) + (d.label.length > 20 ? "..." : ""); })
               .style("font-family", "Arial, Helvetica")
-              .style("font-size", "11")
+              .style("font-size", "9")
               .on("mouseover", function(d) { showBubble(d); highlightLegendItem(d); })
               .on("mouseout", function(d) { hideBubble(d); unhighlightLegendItem(d); });
       }
